@@ -3,8 +3,9 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Recipe;
-use Mews\Purifier\Purifier;
+// use Mews\Purifier\Purifier;
 use Illuminate\Http\Request;
+use Mews\Purifier\Facades\Purifier;
 use App\Http\Controllers\Controller;
 
 class RecipeController extends Controller
