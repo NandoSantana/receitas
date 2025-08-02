@@ -1,0 +1,8 @@
+<?php
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\RecipeController;
+use App\Http\Controllers\Api\CategoryController;
+
+Route::get('/recipes', [RecipeController::class, 'index']);
+Route::get('/recipes/{id}', [RecipeController::class, 'show']);
+Route::get('/categories', [CategoryController::class, 'index']);
