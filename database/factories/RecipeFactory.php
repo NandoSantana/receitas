@@ -19,7 +19,7 @@ class RecipeFactory extends Factory
         return [
             'title' => $this->faker->sentence(3),
             'description' => $this->faker->paragraph(4),
-            'image_path' => $this->faker->imageUrl(640, 480, 'food'),
+            'image_path' => "https://placehold.jp/400x400.png", //$this->faker->imageUrl(640, 480, 'food'), // $this->faker->image(null, 360, 360, 'foods', true);
             'category_id' => rand(1, 4),
         ];
     }
