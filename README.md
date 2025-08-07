@@ -1,5 +1,5 @@
 
-## About to run Api
+## About how to run Api
 
 -> MAMP ON com o mysql ligado
 
