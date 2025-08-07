@@ -7,15 +7,19 @@ class SanitizeHelper
     /**
      * Sanitiza uma string (input simples)
      */
-    public static function cleanString(string $input): string
+    public static function cleanString($input)
     {
+        if ($input === null) {
+            return null;
+        }
         // Remove tags HTML e espaços extras
-        $input = strip_tags($input);
         $input = trim($input);
         $input = preg_replace('/\s+/', ' ', $input);
         $input = htmlspecialchars($input, ENT_QUOTES, 'UTF-8');
-        $input = filter_var($input, FILTER_SANITIZE_STRING);
+        $input = filter_var($input, FILTER_SANITIZE_SPECIAL_CHARS);
 
+
+        
         return $input;
     }
 

@@ -27,7 +27,7 @@
             "Database\\Seeders\\": "database/seeders/"
         },
         "files": [
-            "app/Helpers/InputSanitizer.php"
+            "app/Helpers/SanitizeHelper.php"
         ]
     },
     "autoload-dev": {
