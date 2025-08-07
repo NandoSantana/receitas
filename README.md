@@ -2,9 +2,13 @@
 ## About to run Api
 
 -> MAMP ON com o mysql ligado
+
 -> ComandLine do php 8.2.28
+
 -> php artisan migrate
+
 -> php artisan db:seed
+
 -> php artisan serve
 
 Have at .env
